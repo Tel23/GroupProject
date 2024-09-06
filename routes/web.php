@@ -13,3 +13,8 @@ Route::get('/about', function () {
 Route::get('/content', function () {
     return view('content');
 });
+
+// Add the user route here
+Route::get('/user/{username}', function ($username) {
+    return view('user', ['username' => $username]);
+});
