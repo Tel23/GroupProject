@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purrfect Breeds</title>
+    <meta name="description" content="Explore Purrfect Breeds, your go-to resource for everything about cats. Discover different information on various cat breeds, their origins, and what makes each breed unique.">
+    <meta name="keywords" content="cats, cat breeds, feline information, Purrfect Breeds, cat facts, cat lovers">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -35,6 +37,23 @@
             width: auto;
             display: block;
         }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 10px; 
+            text-decoration: none; 
+        }
+
+        .logo-text {
+            font-size: 20px; 
+            color: #333; 
+            font-weight: bold; 
+        }
+
 
         .nav-links {
             display: flex;
@@ -102,13 +121,21 @@
 <body>
 
     <nav>
+        <div class="logo-container" style="display: flex; align-items: center;">
         <a href="index.html" class="logo">
             <img src="{{ asset('images/logo.jpg') }}" alt="My Logo">
         </a>
+        <span class="logo-text">Hi, {{ $username }}!</span>
+    </div>
+
+
         <div class="nav-links">
-            <a href="http://127.0.0.1:8000/">Home</a>
-            <a href="http://127.0.0.1:8000/about">About Us</a>
+            
+            <a href="http://127.0.0.1:8000/home">Home</a>
             <a href="http://127.0.0.1:8000/content">Cat Breeds</a>
+            <a href="http://127.0.0.1:8000/about">About Us</a>
+            <a href="http://127.0.0.1:8000/contact">Contact Us</a>
+            
         </div>
     </nav>
 
@@ -125,4 +152,3 @@
 
 </body>
 </html>
- 

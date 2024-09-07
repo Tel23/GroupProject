@@ -1,3 +1,4 @@
+New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
  
 <!DOCTYPE html>
 <html lang="en">
@@ -36,6 +37,22 @@
             height: 40px;
             width: auto;
             display: block;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo {
+            margin-right: 10px; 
+            text-decoration: none; 
+        }
+
+        .logo-text {
+            font-size: 20px; 
+            color: #333; 
+            font-weight: bold; 
         }
 
         .nav-links {
@@ -99,13 +116,18 @@
 </head>
 <body>
     <nav>
-        <a href="index.html" class="logo">
-            <img src="{{ asset('images/logo.jpg') }}" alt="My Logo">
-        </a>
+        <div class="logo-container" style="display: flex; align-items: center;">
+            <a href="index.html" class="logo">
+                <img src="{{ asset('images/logo.jpg') }}" alt="My Logo">
+            </a>
+            <span class="logo-text">Hi, {{ $username }}!</span>
+        </div>
+
         <div class="nav-links">
-        <a href="http://127.0.0.1:8000/">Home</a>
-            <a href="http://127.0.0.1:8000/about">About Us</a>
+            <a href="http://127.0.0.1:8000/home">Home</a>
             <a href="http://127.0.0.1:8000/content">Cat Breeds</a>
+            <a href="http://127.0.0.1:8000/about">About Us</a>
+            <a href="http://127.0.0.1:8000/contact">Contact Us</a>
         </div>
     </nav>
 
