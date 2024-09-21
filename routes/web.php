@@ -48,4 +48,3 @@ Route::get('/contact', function () {
     return view('contact', ['username' => $username]);
 })->name('contact');
 
-
