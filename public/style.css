@@ -1,378 +1,502 @@
-New! Keyboard shortcuts … Drive keyboard shortcuts have been updated to give you first-letters navigation
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FAF9F6;
-            color: #333;
-            box-sizing: border-box; 
-        }
-        .login-page {
-            background-color: #A2D2FF; /* Login page background color */
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FAF9F6;
+    color: #333;
+    box-sizing: border-box; 
+}
+.login-page {
+    background-color: #A2D2FF; /* Login page background color */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
-        nav {
-            background-color:  #A2D2FF; 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000; 
-            box-sizing: border-box;
-        }
 
-        .logo img {
-            height: 40px;
-            width: auto;
-            display: block;
-        }
 
-        .logo-container {
-            display: flex;
-            align-items: center;
-        }
+nav {
+    background-color:  #A2D2FF; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    box-sizing: border-box;
 
-        .logo {
-            margin-right: 10px; 
-            text-decoration: none; 
-        }
+}
 
-        .logo-text {
-            font-size: 20px; 
-            color: #333; 
-            font-weight: bold; 
-        }
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
 
-        .nav-links {
-            display: flex;
-        }
+.logo-container {
+    display: flex;
+    align-items: center;
+}
 
-        .nav-links a {
-            color: #fff;
-            text-decoration: none;
-            padding: 14px 20px;
-            font-weight: 600;
-        }
+.logo {
+    margin-right: 10px; 
+    text-decoration: none; 
+}
 
-        .nav-links a:hover {
-            background-color: #bde0fe; 
-            color: #333;
-            border-radius: 5px;
-        }
+.logo-text {
+    font-size: 20px; 
+    color: #333; 
+    font-weight: bold; 
+}
 
-        footer {
-            background-color: #A2D2FF;
-            color: #333;
-            padding: 15px;
-            text-align: center;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
+.nav-links {
+    display: flex;
+}
 
-        footer p {
-            margin: 5px 0;
-            font-size: 14px;
-        }
-        /*home*/
-        .banner {
-            width: 100%;
-            height: 350px;
-            background-size: cover;
-            background-position: center;
-            margin-top: -11%;
-        }
-    
-        .content {
-            padding: 30px 20px;
-            text-align: center;
-            margin-top: 0; 
-            margin-bottom: 80px;
-        }
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: 600;
+}
 
-        .content h2 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 15px;
-        }
+.nav-links a:hover {
+    background-color: #bde0fe; 
+    color: #333;
+    border-radius: 5px;
+}
 
-        .content p {
-            font-size: 16px;
-            line-height: 1.6;
-            max-width: 600px;
-            margin: 0 auto;
-            color: #666;
-        }
-        /* content */
-        .breed-section {
-            display: flex;
-            align-items: flex-start;
-            margin: 80px 20px;
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
+footer {
+    background-color: #A2D2FF;
+    color: #333;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
 
-        .breed-image img {
-            width: 240px; 
-            height: 300px;
-            object-fit: cover;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+/*home*/
+.banner {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-top: -11%;
+}
 
-        .breed-info {
-            margin-left: 20px;
-            flex: 1;
-        }
+.content {
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 0; 
+    margin-bottom: 80px;
+}
 
-        .breed-info h2 {
-            margin-top: 0;
-            color: #8fc9ff;
-        }
-        /* contact */
-        .contact {
-            position: relative;
-            min-height: 100vh;
-            padding: 50px 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+.content h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
 
-        .contact .content {
-            max-width: 800px;
-            text-align: center;
-        }
+.content p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+/* content */
+.breed-section {
+    display: flex;
+    align-items: flex-start;
+    margin: 80px 20px;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
 
-        .contact .content h2 {
-            font-size: 45px;
-            font-weight: 1000;
-            text-align: center;
-            color: #8fc9ff;
-            margin-top: -60px;
-            padding-top: 20px;
-        }
+.breed-image img {
+    width: 240px; 
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
-        .contact .content p {
-            font-weight: 300;
-            color: #fff;
-            margin-bottom: -50px;
-        }
+.breed-info {
+    margin-left: 20px;
+    flex: 1;
+}
 
-        .container {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 30px;
-        }
+.breed-info h2 {
+    margin-top: 0;
+    color: #8fc9ff;
+}
+/* contact */
+.contact {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-        .contactForm {
-            width: 50%;
-            padding: 40px;
-            border-radius: 10px;
-        }
+.contact .content {
+    max-width: 800px;
+    text-align: center;
+}
 
-        .contactForm h2 {
-            font-size: 30px;
-            color: #333;
-            font-weight: 500;
-            text-align: center;
-        }
+.contact .content h2 {
+    font-size: 45px;
+    font-weight: 1000;
+    text-align: center;
+    color: #8fc9ff;
+    margin-top: -60px;
+    padding-top: 0px;
+}
 
-        .contactForm .inputBox {
-            position: relative;
-            width: 100%;
-            margin-top: 20px;
-        }
+.contact .content p {
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: -80px;
+}
 
-        .contactForm .inputBox input,
-        .contactForm .inputBox textarea {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            margin: 10px 0;
-            border: 2px solid #8fc9ff;
-            border-radius: 10px;
-            background-color: #d1e8fc;
-        }
-        .contactForm .inputBox_submit{
-            width: 16.7cm;
-            font-size: 16px;
-            border: 5px solid #8fc9ff;
-            border-radius: 10px;
-            background-color: #8fc9ff;
-        }
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .contactForm .inputBox span {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 5px;
-            color: #666;
-        }
+.contactForm {
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+}
 
-        .contactForm input[type="submit"] {
-            background-color: #8fc9ff;
-            color: #333;
-            border: none;
-            padding: 12px;
-            cursor: pointer;
-            width: 100%;
-        }
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
 
-        .contactForm input[type="submit"]:hover {
-            background-color: #d1e8fc;
-        }
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
 
-        #responseMessage {
-            display: none;
-            font-size: 16px;
-            margin-top: 10px;
-            background-color: #d1e8fc;
-            color: #333;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-            width: 16.1cm;
-        }
-        /* about */
-        .content {
-            padding: 80px 20px 30px; 
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin: 10px 0;
+    border: 2px solid #8fc9ff;
+    border-radius: 10px;
+    background-color: #d1e8fc;
+}
+.contactForm .inputBox_submit{
+    width: 16.7cm;
+    font-size: 16px;
+    border: 5px solid #8fc9ff;
+    border-radius: 10px;
+    background-color: #8fc9ff;
+}
 
-        .team-photos {
-            display: flex;
-            justify-content: center;
-            padding-top: 60px;
-            margin-bottom: 20px;
-        }
+.contactForm .inputBox span {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #666;
+}
 
-        .team-photos img {
-            max-width: 200px; 
-            height: auto;
-            margin: 0 10px;
-            border-radius: 50%;
-            border: 3px solid #8FC9FF;
-        }
+.contactForm input[type="submit"] {
+    background-color: #8fc9ff;
+    color: #333;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    width: 100%;
+}
 
-        .about-text {
-            max-width: 800px; 
-        }
+.contactForm input[type="submit"]:hover {
+    background-color: #d1e8fc;
+}
 
-        .about-text h2 {
-            font-size: 28px;
-            color: #333;
-            margin-bottom: 15px;
-        }
+#responseMessage {
+    display: none;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #d1e8fc;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 16.1cm;
+}
+/* about */
+.content {
+    padding: 80px 20px 30px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
-        .about-text p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #666;
-            margin-bottom: 15px; 
-        }
+.team-photos {
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
 
-        /* log in*/
-        .card {
-            background: rgba(255, 255, 255, 0.9);
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            max-width: 400px;
-            padding: 20px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
+.team-photos img {
+    max-width: 200px; 
+    height: auto;
+    margin: 0 10px;
+    border-radius: 50%;
+    border: 3px solid #8FC9FF;
+}
 
-        .card-img-top {
-            width: 100%;
-            height: auto;
-            border-bottom: 1px solid #ddd;
-        }
+.about-text {
+    max-width: 800px; 
+}
 
-        .card-body {
-            padding: 15px;
-        }
+.about-text h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
 
-        .center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+.about-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 15px; 
+}
 
-        .btn-primary {
-            background-color: #8FC9FF;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+/* log in*/
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    padding: 20px;
+    position: relative; 
+    z-index: 1;
+}
 
-           /* Buttons styling */
-        .interaction-buttons {
-            margin-top: 20px;
-            display: flex;
-            gap: 10px;
-        }
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
 
-        .interaction-buttons button {
-            background-color: transparent;
-            border: none;
-            font-size: 20px;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
+.card-body {
+    padding: 15px;
+}
 
-        .interaction-buttons button.heart {
-            color: #8fc9ff;
-        }
+.center {
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    font-size: 16px; /* Larger title font */
+    color: #333; /* Dark color for the title */
+    margin-bottom: 10px; /* Spacing below title */
+    text-align: center;
+}
+.age-confirmation h3{
+    margin-top: 5px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
 
-        .interaction-buttons button.heart.liked {
-            color: #FF0000; /* Red color when liked */
-        }
+label {
+    font-weight: bold; /* Bold label text */
+    margin-bottom: 5px; /* Spacing below labels */
+    display: block; /* Block display for spacing */
+}
 
-        .interaction-buttons button:hover {
-            color: #FF0000;
-        }
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 20px); /* Full width with padding */
+    padding: 10px; /* Inner spacing */
+    margin-bottom: 10px; /* Spacing below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners for inputs */
+    font-size: 16px; /* Input font size */
+}
 
-        /* Comment Section Styling */
-        .comment-section {
-            margin-top: 15px;
-            display: none;
-        }
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
 
-        .comment-section textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            resize: none;
-        }
+.btn-primary {
+    background-color: #007bff; /* Button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Button font size */
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 5px;
+}
 
-        .comments-list {
-            margin-top: 10px;
-        }
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
 
-        .comment-item {
-            margin-top: 10px;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
-        }
+.age-confirmation h5 {
+    margin-top: 5px; /* Space above age prompt */
+    margin-bottom: 5px; /* Space below age prompt */
+}
+
+
+
+   /* Buttons styling */
+.interaction-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.interaction-buttons button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.interaction-buttons button.heart {
+    color: #8fc9ff;
+}
+
+.interaction-buttons button.heart.liked {
+    color: #FF0000; /* Red color when liked */
+}
+
+.interaction-buttons button:hover {
+    color: #FF0000;
+}
+
+/* Comment Section Styling */
+.comment-section {
+    margin-top: 15px;
+    display: none;
+}
+
+.comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comment-item {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/*Denied Access CSS Style*/
+.denies-site{
+    background-color: #A2D2FF;
+    margin: 0;
+    padding: 0;
+}
+.denied-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center text */
+    padding: 20px; /* Padding around content */
+}
+/* Heading styling */
+.denied-container h1 {
+    font-size: 2.5rem; /* Larger font size for the heading */
+    color: #d9534f; /* Use a color to indicate a warning (red) */
+    margin-bottom: 10px; /* Space below heading */
+}
+
+/* Paragraph styling */
+.denied-container p {
+    font-size: 1.2rem; /* Slightly larger text */
+    color: #333; /* Darker text color for contrast */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Button styling */
+.denied-container .btn-primary {
+    display: inline-block; /* Make the link behave like a button */
+    padding: 10px 20px; /* Padding around the text */
+    background-color: #007bff; /* Bootstrap primary button color */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Button hover effect */
+.denied-container .btn-primary:hover {
+    background-color: #31b0d5; /* Darker shade on hover */
+}
+
+/* restricted */
+.restricted {
+    margin-top: 80px; /* Prevent overlap with the fixed nav */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.restricted h1 {
+    color: #8fc9ff; 
+    text-align: center;
+    margin-bottom: 20px; /* Space below the main title */
+}
+
+.restricted-section {
+    margin-bottom: 20px;
+    padding: 15px; /* Increase padding for better appearance */
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.restricted h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px; /* Space below subheading */
+}
+
+.restricted ul {
+    padding-left: 20px;
+    list-style-type: disc; /* Add bullet points */
+}
